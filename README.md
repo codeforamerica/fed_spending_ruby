@@ -1,32 +1,18 @@
-# The Code for America RubyGem template
+# Fedspending.gov Ruby Gem
+A thin wrapper for the fedspending.gov API
 
-If you want to create a new Code for America gem, you can use this gem as a template.
-It's similar to [suspenders][suspenders], but for RubyGems instead of Rails.
+Usage
+-----
+	require 'fed_spending'
+	FedSpending.rcv({:detail => -1, :recipient_state => 'IA'})
+	# Returns a hash of the summary of modified recovery data on Federal contracts for the state of Iowa
+	
+	FedSpending.faads({:detail => -1, :recipient_name => 'Smith', :fiscal_year => 2006})
+	# Returns a hash of FAADS Contracts from 2006 with the recipient name of Smith
+	
+	FedSpending.fdps({:detail => -1, :state => 'AL'})
+	# Returns a hash of the modified FPDS data on Federal contracts from the state of Alabama
+	
+See [Fed Spending](http://www.fedspending.org/apidoc.php) for a full list of options
 
-[suspenders]: https://github.com/thoughtbot/suspenders
-
-For more information on RubyGems, you should read the [RubyGems Manuals][manuals].
-
-[manuals]: http://docs.rubygems.org/
-
-After cloning this gem, you'll want to make the following changes:
-
-1. Replace all instances of gem_template and GemTemplate with the snake_case and CamelCase name of your gem, respectively
-2. Add a summary and description to the [gemspec][gemspec] file
-
-[gemspec]: https://github.com/codeforamerica/gem_template/blob/master/gem_template.gemspec
-
-This template includes:
-
-* [RSpec][rspec] for isolation testing
-* [SimpleCov][simplecov] for C0 code coverage
-* [ZenTest][zentest] for continuous testing
-* [YARD][yard] for documentation
-
-[rspec]: https://github.com/rspec/rspec
-[simplecov]: https://github.com/colszowka/simplecov
-[zentest]: https://github.com/seattlerb/zentest
-[yard]: https://github.com/lsegal/yard
-
-
-[![Code for America Tracker](http://stats.codeforamerica.org/codeforamerica/gem_template.png)](http://stats.codeforamerica.org/projects/gem_template)
+[![Code for America Tracker](http://stats.codeforamerica.org/codeforamerica/fed_spending.png)](http://stats.codeforamerica.org/projects/fed_spending)
