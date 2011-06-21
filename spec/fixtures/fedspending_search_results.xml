@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<fedspendingSearchResults xml_format_version="0.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.fedspending.org//_summary.xsd">
+  <search_criteria>
+    <search_criterion field="Contractor State" value="Alabama"/>
+    <search_criterion field="Sort By" value="Parent Name"/>
+    <search_criterion field="Number of records" value="All records for each year"/>
+    <search_criterion field="Level of Detail" value="Summary"/>
+    <search_criterion field="Output" value="XML"/>
+  </search_criteria>
+  <data compiled_from_government_data_last_released_on="2009-05-28" database="" description="U.S. Federal contracts" max_records="1000">
+    <record detail="summary" description="summary record for search" database="FPDS">
+      <totals>
+        <total_ObligatedAmount>53742289960.22</total_ObligatedAmount>
+        <rank_among_states>20</rank_among_states>
+        <number_of_contractors>5536</number_of_contractors>
+        <number_of_transactions>256722</number_of_transactions>
+      </totals>
+      <extent_of_competition description="total obligated amount dollars by extent of competition in contracts">
+        <full_and_open_competition>19966979383.48</full_and_open_competition>
+        <full_and_open_competition_but_only_one_bid>10601941343.48</full_and_open_competition_but_only_one_bid>
+        <competition_after_exclusion_of_sources>12857546087.54</competition_after_exclusion_of_sources>
+        <follow_on_contract>241625000.28</follow_on_contract>
+        <not_available_for_competition>3860366283.17</not_available_for_competition>
+        <not_competed>5651740475.22</not_competed>
+        <unknown>562091387.05</unknown>
+      </extent_of_competition>
+      <top_known_congressional_districts description="Top congressional districts where work is performed" ranked_by="total obligated amount in dollars" maximum_shown="5">
+        <congressional_district rank="1" total_obligatedAmount="13312641030.32">Alabama 5 (Robert E. (Bud) Cramer Jr. / Parker Griffith / Mo Brooks)</congressional_district>
+        <congressional_district rank="2" total_obligatedAmount="890079121.52">Alabama 3 (Bob Riley / Mike Rogers)</congressional_district>
+        <congressional_district rank="3" total_obligatedAmount="804311083.77">Alabama 6 (Spencer Bachus)</congressional_district>
+        <congressional_district rank="4" total_obligatedAmount="676939044.45">Alabama 7 (Earl F. Hilliard / Artur Davis / Terri A. Sewell)</congressional_district>
+        <congressional_district rank="5" total_obligatedAmount="639960252.75">Alabama 1 (Sonny Callahan / Jo Bonner)</congressional_district>
+      </top_known_congressional_districts>
+      <top_products_or_services_sold ranked_by="total obligated amount in dollars" maximum_shown="5">
+        <product_or_service_category rank="1" total_obligatedAmount="7302258627.77">Other Defense -- Advanced Development (R&amp;D)</product_or_service_category>
+        <product_or_service_category rank="2" total_obligatedAmount="4218584280.22">Engineering and Technical Services</product_or_service_category>
+        <product_or_service_category rank="3" total_obligatedAmount="3403350158.25">Defense Missile and Space Systems -- Advanced Development (R&amp;D)</product_or_service_category>
+        <product_or_service_category rank="4" total_obligatedAmount="2160072562.22">Construction of Structures and Facilities -- Office Buildings</product_or_service_category>
+        <product_or_service_category rank="5" total_obligatedAmount="1986834049.19">Construction of Structures and Facilities -- Miscellaneous Buildings</product_or_service_category>
+      </top_products_or_services_sold>
+      <top_contracting_agencies ranked_by="total obligated amount in dollars" maximum_shown="5">
+        <agency rank="1" total_obligatedAmount="26900259463.69">ARMY, Department of the (except Corps of Engineers Civil Program Financing)</agency>
+        <agency rank="2" total_obligatedAmount="7609430750.41">Missile Defense Agency</agency>
+        <agency rank="3" total_obligatedAmount="3822142153.11">NAVY, Department of the</agency>
+        <agency rank="4" total_obligatedAmount="2686240587.14">STATE, Department of</agency>
+        <agency rank="5" total_obligatedAmount="2655716745.56">AIR FORCE, Department of the (Headquarters, USAF)</agency>
+      </top_contracting_agencies>
+      <top_contractor_parent_companies ranked_by="total obligated amount in dollars" maximum_shown="10">
+        <contractor_parent_company rank="1" total_obligatedAmount="7800674430.89">BOEING CO.</contractor_parent_company>
+        <contractor_parent_company rank="2" total_obligatedAmount="2811211906.30">CADDELL CONSTRUCTION CO INC</contractor_parent_company>
+        <contractor_parent_company rank="3" total_obligatedAmount="2404175424.41">BILL HARBERT INTERNATIONAL CONSTRUCTION</contractor_parent_company>
+        <contractor_parent_company rank="4" total_obligatedAmount="2099752796.44">BAE SYSTEMS</contractor_parent_company>
+        <contractor_parent_company rank="5" total_obligatedAmount="1521997684.37">COMPUTER SCIENCES CORP.</contractor_parent_company>
+        <contractor_parent_company rank="6" total_obligatedAmount="1227524728.49">CAS INC</contractor_parent_company>
+        <contractor_parent_company rank="7" total_obligatedAmount="1166174300.87">JVYS</contractor_parent_company>
+        <contractor_parent_company rank="8" total_obligatedAmount="1155635142.12">TELEDYNE TECHNOLOGIES, INC.</contractor_parent_company>
+        <contractor_parent_company rank="9" total_obligatedAmount="1004686434.56">NEW MOUNTAIN CAPITAL LLC</contractor_parent_company>
+        <contractor_parent_company rank="10" total_obligatedAmount="868976643.76">QUANTUM RESEARCH INTL</contractor_parent_company>
+      </top_contractor_parent_companies>
+      <fiscal_years description="total obligated amount in dollars by year">
+        <fiscal_year year="2000">3095382695.72</fiscal_year>
+        <fiscal_year year="2001">2993455625.26</fiscal_year>
+        <fiscal_year year="2002">4137376279.35</fiscal_year>
+        <fiscal_year year="2003">4110313413.23</fiscal_year>
+        <fiscal_year year="2004">7228024381.85</fiscal_year>
+        <fiscal_year year="2005">5287124586.64</fiscal_year>
+        <fiscal_year year="2006">5908807663.16</fiscal_year>
+        <fiscal_year year="2007">9066557726.43</fiscal_year>
+        <fiscal_year year="2008">9543096909.34</fiscal_year>
+        <fiscal_year year="2009">2372150679.24</fiscal_year>
+      </fiscal_years>
+    </record>
+  </data>
+</fedspendingSearchResults>
