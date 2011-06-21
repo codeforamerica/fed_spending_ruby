@@ -43,11 +43,27 @@ module FedSpending
       end
       
       def faads(params={}, options={})
+        if !params[:sort_by].nil?
+          params["sortby"] = params[:sort_by]
+          params.delete(:sort_by)
+        end
         request = ""
         params.each do|key, value|
           request += key.to_s + "=" + value.to_s + "&"
         end
         get("faads/faads.php?datatype=X&#{request}")
+      end
+      
+      def rcv(params={}, options={})
+        if !params[:sort_by].nil?
+          params["sortp"] = params[:sort_by]
+          params.delete(:sort_by)
+        end
+        request = ""
+        params.each do|key, value|
+          request += key.to_s + "=" + value.to_s + "&"
+        end
+        get("rcv/rcv.php?datatype=X&#{request}")
       end
       
     end
