@@ -2,6 +2,14 @@ module FedSpending
   class Client
     module Api
       
+      # Allows access to modified FPDS data on Federal contracts.
+      # @param params [Hash] The parameters for the lookup
+      # @param options [Hash] A customizable set of options. 
+      # @return {Hash}
+      # @see http://www.fedspending.org/api_fpds.php
+      # @example
+      #   fdps({:detail => -1, :state => 'AL'})
+      
       def fdps(params={}, options={})
         if !params[:zip_code].nil?
           params["ZIPCode"] = params[:zip_code]
@@ -42,6 +50,14 @@ module FedSpending
         get("fpds/fdps.php?datatype=X&#{request}")
       end
       
+      # Allows access to modified FAADS data on Federal contracts.
+      # @param params [Hash] The parameters for the lookup
+      # @param options [Hash] A customizable set of options. 
+      # @return {Hash}
+      # @see http://www.fedspending.org/api_faads.php
+      # @example
+      #   faads({:detail => -1, :recipient_name => 'Smith', :fiscal_year => 2006})
+      
       def faads(params={}, options={})
         if !params[:sort_by].nil?
           params["sortby"] = params[:sort_by]
@@ -53,6 +69,14 @@ module FedSpending
         end
         get("faads/faads.php?datatype=X&#{request}")
       end
+      
+      # Allows access to modified recovery data on Federal contracts.
+      # @param params [Hash] The parameters for the lookup
+      # @param options [Hash] A customizable set of options. 
+      # @return {Hash}
+      # @see http://www.fedspending.org/api_rcv.php
+      # @example
+      #   rcv({:detail => -1, :recipient_state => 'IA'})
       
       def rcv(params={}, options={})
         if !params[:sort_by].nil?
