@@ -13,7 +13,7 @@ describe FedSpending::Client::Api do
     end
     
     it "Should return the correct item" do
-      test = @client.fdps()
+      test = @client.fdps({:detail => -1, :state => 'AL'})
       a_get("fpds/fdps.php?datatype=X&detail=-1&state=AL").should have_been_made
       test.fedspendingSearchResults.data.record.totals.rank_among_states.should == "20"
     end
