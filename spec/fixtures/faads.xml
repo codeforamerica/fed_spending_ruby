@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<fedspendingSearchResults xml_format_version="0.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.fedspending.org//_summary.xsd">
+  <search_criteria>
+    <search_criterion field="Recipient Name" value="Smith"/>
+    <search_criterion field="Federal Fiscal Year" value="2006"/>
+    <search_criterion field="Sort By" value="Recipient Name"/>
+    <search_criterion field="Number of records" value="All records for each year"/>
+    <search_criterion field="Level of Detail" value="Summary"/>
+    <search_criterion field="Type of Report Output" value="XML"/>
+  </search_criteria>
+  <data compiled_from_government_data_last_released_on="2009-03-18" database="" description="U.S. Federal grants and other assistance" max_records="1000">
+    <record detail="summary" description="summary record for search" database="FAADS">
+      <totals>
+        <fiscal_year>2006</fiscal_year>
+        <fed_total>131582977</fed_total>
+        <number_of_recipients>653</number_of_recipients>
+        <number_of_transactions>1223</number_of_transactions>
+      </totals>
+      <top_known_congressional_districts description="Top congressional districts where recipients are located" ranked_by="total obligated amount in dollars" maximum_shown="5">
+        <congressional_district rank="1" total_obligatedAmount="18126237">Arkansas 3 (John Boozman)</congressional_district>
+        <congressional_district rank="2" total_obligatedAmount="10026463">Texas 14 (Ron Paul)</congressional_district>
+        <congressional_district rank="3" total_obligatedAmount="9344563">Mississippi 4 (Gene Taylor)</congressional_district>
+        <congressional_district rank="4" total_obligatedAmount="6339939">Arkansas 2 (Vic Snyder)</congressional_district>
+        <congressional_district rank="5" total_obligatedAmount="4991756">Nebraska 3 (Tom Osborne)</congressional_district>
+      </top_known_congressional_districts>
+      <top_cfda_programs ranked_by="total obligated amount in dollars" maximum_shown="5">
+        <cfda_program rank="1" total_obligatedAmount="20187100">59.008: Physical Disaster Loans</cfda_program>
+        <cfda_program rank="2" total_obligatedAmount="19210725">84.268: Federal Direct Student Loans</cfda_program>
+        <cfda_program rank="3" total_obligatedAmount="16710440">84.063: Federal Pell Grant Program</cfda_program>
+        <cfda_program rank="4" total_obligatedAmount="13254485">10.407: Farm Ownership Loans</cfda_program>
+        <cfda_program rank="5" total_obligatedAmount="9952963">93.600: Head Start</cfda_program>
+      </top_cfda_programs>
+      <top_agencies_providing_assistance ranked_by="total obligated amount in dollars" maximum_shown="5">
+        <agency rank="1" total_obligatedAmount="26648200">Small Business Administration</agency>
+        <agency rank="2" total_obligatedAmount="19968358">EDUCATION, Department of</agency>
+        <agency rank="3" total_obligatedAmount="19525273">DOED - Student Financial Assistance Programs</agency>
+        <agency rank="4" total_obligatedAmount="13697635">Dept. Ag. - Farm Service Agency</agency>
+        <agency rank="5" total_obligatedAmount="9952963">HHS - Secy. of Health and Human Services</agency>
+      </top_agencies_providing_assistance>
+      <top_recipients ranked_by="total obligated amount in dollars" maximum_shown="10">
+        <recipient rank="1" total_obligatedAmount="22020829">JOHNSON C SMITH UNIVERSITY</recipient>
+        <recipient rank="2" total_obligatedAmount="9952963">WM SMITH SR TRI COUNTY CHILD DEV COUNCIL</recipient>
+        <recipient rank="3" total_obligatedAmount="8883094">UNIVERSITY OF ARKANSAS FORT SMITH</recipient>
+        <recipient rank="4" total_obligatedAmount="8520151">TRUSTEES OF THE SMITH COLLEGE</recipient>
+        <recipient rank="5" total_obligatedAmount="6893909">SMITH-KETTLEWELL EYE RESEARCH FOUNDATION</recipient>
+        <recipient rank="6" total_obligatedAmount="5663699">PHILANDER SMITH COLLEGE</recipient>
+        <recipient rank="7" total_obligatedAmount="4743235">FORT SMITH</recipient>
+        <recipient rank="8" total_obligatedAmount="3916000">SMITH, DOLLY V</recipient>
+        <recipient rank="9" total_obligatedAmount="2509756">SMITH COLLEGE</recipient>
+        <recipient rank="10" total_obligatedAmount="1747861">SMITH BERETANIA APARTMENTS</recipient>
+      </top_recipients>
+      <assistance_types description="total Federal obligated dollars for each type of governmental assistance">
+        <direct_payments_both_specified_and_unrestricted>29235220</direct_payments_both_specified_and_unrestricted>
+        <grants_and_cooperative_agreements>57420521</grants_and_cooperative_agreements>
+        <insurance>0</insurance>
+        <loans_both_direct_and_guaranteed>44927236</loans_both_direct_and_guaranteed>
+        <other>0</other>
+      </assistance_types>
+      <recipient_types description="total Federal obligated dollars for each type of recipient">
+        <for_profits>3197953</for_profits>
+        <government>15475240</government>
+        <higher_education>43987696</higher_education>
+        <individuals>45374957</individuals>
+        <nonprofits>20128357</nonprofits>
+        <other>3418774</other>
+      </recipient_types>
+    </record>
+  </data>
+</fedspendingSearchResults>

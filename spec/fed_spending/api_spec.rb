@@ -19,6 +19,19 @@ describe FedSpending::Client::Api do
     end
   end
     
+  describe ".faads" do
+    before do
+      stub_get("faads/faads.php?datatype=X&detail=-1&recipient_name=Smith&fiscal_year=2006").
+        to_return(:status => 200, :body => fixture("faads.xml"))
+    end
+    
+    it "Should return the correct item" do
+      test = @client.faads({:detail => -1, :recipient_name => 'Smith', :fiscal_year => 2006})
+      a_get("faads/faads.php?datatype=X&detail=-1&recipient_name=Smith&fiscal_year=2006").should have_been_made
+      test.fedspendingSearchResults.data.record.totals.rank_among_states.should == "20"
+    end
+  end  
+  
     
   
 end
