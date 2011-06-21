@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<fedspendingSearchResults xml_format_version="0.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.fedspending.org//_summary.xsd">
+  <search_criteria>
+    <search_criterion field="Recipient State" value="Iowa"/>
+    <search_criterion field="Sort By" value="Award or Payment Amount"/>
+    <search_criterion field="Number of records" value="All records for each year"/>
+    <search_criterion field="Cumulative or Quarterly Dataset" value="Cumulative"/>
+    <search_criterion field="Level of Detail" value="Summary"/>
+    <search_criterion field="Type of Report Output" value="XML"/>
+  </search_criteria>
+  <data compiled_from_government_data_last_released_on="2011-01-30" database="" description="U.S. Recovery funding data" max_records="1000">
+    <record detail="summary" description="summary record for search" database="Recovery">
+      <totals>
+        <total_net_amount_retained>$1,645,373,746</total_net_amount_retained>
+        <net_amount_calculation>
+          <received_as_prime_recipients>
+            <amount_awarded_from_federal_government>$2,066,346,669</amount_awarded_from_federal_government>
+            <amount_awarded_to_sub_recipients>$-989,908,912</amount_awarded_to_sub_recipients>
+            <payments_to_vendors>$-319,244,886</payments_to_vendors>
+            <net_amount_retained_by_prime_recipients>$757,192,870</net_amount_retained_by_prime_recipients>
+          </received_as_prime_recipients>
+          <received_as_sub_recipients>
+            <amount_awarded_from_prime_recipients>$1,017,785,372</amount_awarded_from_prime_recipients>
+            <payments_to_vendors>$-135,558,416</payments_to_vendors>
+            <net_amount_retained_by_sub_recipients>$882,226,957</net_amount_retained_by_sub_recipients>
+          </received_as_sub_recipients>
+          <received_as_vendors>
+            <amount_paid_by_prime_and_sub_recipients_to_vendors>$5,953,919</amount_paid_by_prime_and_sub_recipients_to_vendors>
+          </received_as_vendors>
+          <total_for_this_search>$1,645,373,746</total_for_this_search>
+        </net_amount_calculation>
+        <total_arra_funds_received_by_primes>1,420,572,755</total_arra_funds_received_by_primes>
+        <total_number_of_awards>1,313</total_number_of_awards>
+        <total_number_of_recipients>1,225</total_number_of_recipients>
+        <total_number_of_FTEs>5,052.22</total_number_of_FTEs>
+      </totals>
+      <received_as_prime_recipients>
+        <amount_awarded>$2,066,346,669</amount_awarded>
+        <net_amount_retained>$757,192,870</net_amount_retained>
+        <contracts_awarded>$168,599,685</contracts_awarded>
+        <grants_awarded>$1,819,544,662</grants_awarded>
+        <loans_awarded>$78,202,321</loans_awarded>
+        <number_of_awards>1,200</number_of_awards>
+        <number_of_recipients>414</number_of_recipients>
+      </received_as_prime_recipients>
+      <received_as_sub_recipients>
+        <amount_awarded>$1,017,785,372</amount_awarded>
+        <net_amount_retained>$882,226,957</net_amount_retained>
+        <contracts_awarded>$75,192,416</contracts_awarded>
+        <grants_awarded>$942,419,722</grants_awarded>
+        <loans_awarded>$173,234</loans_awarded>
+        <number_of_awards>299</number_of_awards>
+        <number_of_recipients>918</number_of_recipients>
+      </received_as_sub_recipients>
+      <received_as_vendors>
+        <amount_of_payments>$5,953,919</amount_of_payments>
+        <number_of_payments>9</number_of_payments>
+        <number_of_vendors>12</number_of_vendors>
+      </received_as_vendors>
+      <top_recipients ranked_by="total award amount in dollars" maximum_shown="5">
+        <recipient rank="1" award_amount="472339542">EXECUTIVE OFFICE OF THE STATE OF IOWA</recipient>
+        <recipient rank="2" award_amount="384378918.1">TRANSPORTATION, IOWA DEPT OF</recipient>
+        <recipient rank="3" award_amount="211779381">EDUCATION, IOWA DEPARTMENT OF</recipient>
+        <recipient rank="4" award_amount="112328927.17">UNIVERSITY OF IOWA, THE</recipient>
+        <recipient rank="5" award_amount="91655809">HUMAN RIGHTS, IOWA DEPARTMENT</recipient>
+        <recipient rank="6" award_amount="82990798">NATURAL RESOURCES, IOWA DEPARTMENT OF</recipient>
+        <recipient rank="7" award_amount="62574079">IOWA STATE UNIVERSITY</recipient>
+        <recipient rank="8" award_amount="53495993">IOWA OFFICE OF ENERGY INDEPENDENCE</recipient>
+        <recipient rank="9" award_amount="46542195.34">GROOMS &amp; CO. CONSTRUCTION, INC.</recipient>
+        <recipient rank="10" award_amount="37882090.38">DES MOINES INDEPENDENT SCHOOL DISTRICT</recipient>
+      </top_recipients>
+      <top_place_of_performance_congressional_districts description="Top congressional districts where work is performed" ranked_by="total net amount retained in dollars" maximum_shown="5">
+        <congressional_district rank="1" award_amount="496355778.15">Iowa 3 (Leonard L. Boswell)</congressional_district>
+        <congressional_district rank="2" award_amount="363122765.77">Iowa 2 (David Loebsack)</congressional_district>
+        <congressional_district rank="3" award_amount="317027572.33">Iowa 4 (Tom Latham)</congressional_district>
+        <congressional_district rank="4" award_amount="210133169.09">Iowa 5 (Steve King)</congressional_district>
+        <congressional_district rank="5" award_amount="209621393.77">Iowa 1 (Bruce L. Braley)</congressional_district>
+      </top_place_of_performance_congressional_districts>
+      <top_awarding_agencies ranked_by="total award amount in dollars" maximum_shown="5">
+        <agency rank="1" award_amount="1007659101.23">Office of Elementary and Secondary Education</agency>
+        <agency rank="2" award_amount="430564703.6">Federal Highway Administration</agency>
+        <agency rank="3" award_amount="275638255.41">ENERGY, Department of</agency>
+        <agency rank="4" award_amount="267383416">Office of Special Education and Rehabilitative Services</agency>
+        <agency rank="5" award_amount="160655103">ENVIRONMENTAL PROTECTION AGENCY</agency>
+      </top_awarding_agencies>
+      <top_cities ranked_by="total award amount in dollars" maximum_shown="5">
+        <city rank="1" award_amount="375194236.97">Des Moines, IA</city>
+        <city rank="2" award_amount="124374073.72">Iowa City, IA</city>
+        <city rank="3" award_amount="89548624.69">Ames, IA</city>
+        <city rank="4" award_amount="70702458">Ottumwa, IA</city>
+        <city rank="5" award_amount="56888626.02">Cedar Rapids, IA</city>
+      </top_cities>
+    </record>
+  </data>
+</fedspendingSearchResults>

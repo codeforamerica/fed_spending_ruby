@@ -30,7 +30,20 @@ describe FedSpending::Client::Api do
       a_get("faads/faads.php?datatype=X&detail=-1&recipient_name=Smith&fiscal_year=2006").should have_been_made
       test.fedspendingSearchResults.data.record.totals.fed_total.should == "131582977"
     end
-  end  
+  end
+  
+  describe ".rcv" do
+    before do
+      stub_get("rcv/rcv.php?datatype=X&detail=-1&recipient_name=Smith&fiscal_year=2006").
+        to_return(:status => 200, :body => fixture("rcv.xml"))
+    end
+    
+    it "Should return the correct item" do
+      test = @client.rcv({:detail => -1, :recipient_name => 'Smith', :fiscal_year => 2006})
+      a_get("rcv/rcv.php?datatype=X&detail=-1&recipient_name=Smith&fiscal_year=2006").should have_been_made
+      test.fedspendingSearchResults.data.record.totals.fed_total.should == "131582977"
+    end
+  end
   
     
   
