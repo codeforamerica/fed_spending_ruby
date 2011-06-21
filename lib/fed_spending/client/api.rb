@@ -42,6 +42,14 @@ module FedSpending
         get("fpds/fdps.php?datatype=X&#{request}")
       end
       
+      def faads(params={}, options={})
+        request = ""
+        params.each do|key, value|
+          request += key.to_s + "=" + value.to_s + "&"
+        end
+        get("faads/faads.php?datatype=X&#{request}")
+      end
+      
     end
   end
 end

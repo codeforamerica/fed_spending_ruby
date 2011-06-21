@@ -28,7 +28,7 @@ describe FedSpending::Client::Api do
     it "Should return the correct item" do
       test = @client.faads({:detail => -1, :recipient_name => 'Smith', :fiscal_year => 2006})
       a_get("faads/faads.php?datatype=X&detail=-1&recipient_name=Smith&fiscal_year=2006").should have_been_made
-      test.fedspendingSearchResults.data.record.totals.rank_among_states.should == "20"
+      test.fedspendingSearchResults.data.record.totals.fed_total.should == "131582977"
     end
   end  
   
