@@ -80,4 +80,4 @@ See
 for details.
 
 [![Code for America
-Tracker](http://stats.codeforamerica.org/codeforamerica/fcc_reboot.png)]
+Tracker](http://stats.codeforamerica.org/codeforamerica/fcc_reboot.png)](http://stats.codeforamerica.org/)
