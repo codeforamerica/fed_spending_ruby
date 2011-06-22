@@ -15,7 +15,7 @@ Usage
 	FedSpending.fpds({:detail => -1, :state => 'AL'})
 	# Returns a hash of the modified FPDS data on Federal contracts from the state of Alabama
 	
-```ruby
+```
 
 See [Fed Spending](http://www.fedspending.org/apidoc.php) for a full list of options
 
