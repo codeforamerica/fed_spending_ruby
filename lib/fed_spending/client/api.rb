@@ -47,7 +47,7 @@ module FedSpending
         params.each do|key, value|
           request += key.to_s + "=" + value.to_s + "&"
         end
-        get("fpds/fdps.php?datatype=X&#{request}")
+        get("fpds/fdps.php?datype=X&#{request}")
       end
       
       # Allows access to modified FAADS data on Federal contracts.
@@ -67,7 +67,7 @@ module FedSpending
         params.each do|key, value|
           request += key.to_s + "=" + value.to_s + "&"
         end
-        get("faads/faads.php?datatype=X&#{request}")
+        get("faads/faads.php?datype=X&#{request}")
       end
       
       # Allows access to modified recovery data on Federal contracts.
@@ -87,7 +87,7 @@ module FedSpending
         params.each do|key, value|
           request += key.to_s + "=" + value.to_s + "&"
         end
-        get("rcv/rcv.php?datatype=X&#{request}")
+        get("rcv/rcv.php?datype=X&#{request}")
       end
       
     end
