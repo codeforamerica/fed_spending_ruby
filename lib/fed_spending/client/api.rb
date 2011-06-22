@@ -8,9 +8,9 @@ module FedSpending
       # @return {Hash}
       # @see http://www.fedspending.org/api_fpds.php
       # @example
-      #   fdps({:detail => -1, :state => 'AL'})
+      #   fpds({:detail => -1, :state => 'AL'})
       
-      def fdps(params={}, options={})
+      def fpds(params={}, options={})
         if !params[:zip_code].nil?
           params["ZIPCode"] = params[:zip_code]
           params.delete(:zip_code)
@@ -43,11 +43,11 @@ module FedSpending
           params["sortby"] = params[:sort_by]
           params.delete(:sort_by)
         end
-        request = ""
+        request = []
         params.each do|key, value|
-          request += key.to_s + "=" + value.to_s + "&"
+          request << "#{key.to_s}=#{value.to_s}"
         end
-        get("fpds/fdps.php?datype=X&#{request}")
+        get("fpds/fpds.php?datype=X&#{request.join('&')}")
       end
       
       # Allows access to modified FAADS data on Federal contracts.
@@ -63,11 +63,11 @@ module FedSpending
           params["sortby"] = params[:sort_by]
           params.delete(:sort_by)
         end
-        request = ""
+        request = []
         params.each do|key, value|
-          request += key.to_s + "=" + value.to_s + "&"
+          request << "#{key.to_s}=#{value.to_s}"
         end
-        get("faads/faads.php?datype=X&#{request}")
+        get("faads/faads.php?datype=X&#{request.join('&')}")
       end
       
       # Allows access to modified recovery data on Federal contracts.
@@ -87,11 +87,11 @@ module FedSpending
           params["recipient_st"] = params[:recipient_state]
           params.delete(:recipient_state)
         end
-        request = ""
+        request = []
         params.each do|key, value|
-          request += key.to_s + "=" + value.to_s + "&"
+          request << "#{key.to_s}=#{value.to_s}"
         end
-        get("rcv/rcv.php?datype=X&#{request}")
+        get("rcv/rcv.php?datype=X&#{request.join('&')}")
       end
       
     end
