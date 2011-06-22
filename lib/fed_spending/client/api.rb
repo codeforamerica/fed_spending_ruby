@@ -83,6 +83,10 @@ module FedSpending
           params["sortp"] = params[:sort_by]
           params.delete(:sort_by)
         end
+        if !params[:recipient_state].nil?
+          params["recipient_st"] = params[:recipient_state]
+          params.delete(:recipient_state)
+        end
         request = ""
         params.each do|key, value|
           request += key.to_s + "=" + value.to_s + "&"
