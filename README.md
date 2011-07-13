@@ -80,4 +80,4 @@ See
 for details.
 
 [![Code for America
-Tracker](http://stats.codeforamerica.org/codeforamerica/fcc_reboot.png)](http://stats.codeforamerica.org/)
+Tracker](http://stats.codeforamerica.org/codeforamerica/fed_spending_ruby.png)](http://stats.codeforamerica.org/projects/fed_spending_ruby)
