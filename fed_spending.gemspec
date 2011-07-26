@@ -4,8 +4,8 @@ require File.expand_path('../lib/fed_spending/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.name        = 'fed_spending'
   gem.version     = FedSpending::VERSION
-  gem.author      = "Code for America"
-  gem.email       = 'info@codeforamerica.org'
+  gem.author      = "blakeshall"
+  gem.email       = 'blake@codeforamerica.org'
   gem.homepage    = ''
   gem.summary     = %q{A Ruby wrapper for the FedSpending API}
   gem.description = %q{A Code for America sponsored Ruby wrapper for the FedSpending API. See FedSpending.org for more information.}
